@@ -1,0 +1,37 @@
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info1 {
+    width: 80%;
+    height: 100%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    background-image: url('../images/Mudden.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info2 {
+    width: 80%;
+    height: 100%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    background-image: url('../images/hs.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info3 {
+    width: 80%;
+    height: 100%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    background-image: url('../images/stm.jfif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
