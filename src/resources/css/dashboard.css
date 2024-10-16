@@ -28,6 +28,10 @@
     justify-content: flex-start;
 }
 
+.sideMenuContainer:hover {
+    
+}
+
 .sideFloatClass{
     opacity: 0;
     animation-name: slideLeft;

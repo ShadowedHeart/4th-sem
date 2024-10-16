@@ -94,6 +94,7 @@ const Home = () => {
         <Avatar
           src={dp}
           sx={{ width: "100%", height: "100%", boxShadow: 24 }}
+          className="avatarAnimation"
         />
       </Box>
     </div>

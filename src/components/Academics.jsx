@@ -56,7 +56,8 @@ export default function Academics() {
         <Stepper nonLinear activeStep={activeStep}>
           {steps.map((label, index) => (
             <Step key={label}>
-              <StepButton color="inherit" onClick={handleStep(index)}>
+              <StepButton color="inherit" onMouseEnter={handleStep(index)}> 
+                {/* on hovering it will show */}
                 <Typography sx={{ fontSize: "1rem" }}> {label}</Typography>
               </StepButton>
             </Step>

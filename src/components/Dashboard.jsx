@@ -304,7 +304,7 @@ export default function Dashboard() {
             )}
           </IconButton>
         </DrawerHeader>
-        <Divider />
+        <Divider/>
         <List className="sideMenuContainer" sx={{ background: "transparent" }}>
           {DEFAULT_SIDE_MENU.map((data, index) => (
             <div
