@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import "../resources/css/home.css";
+import "../resources/css/socialProfile.css";
 
 import { Box, Typography } from "@mui/material";
 

@@ -19,5 +19,12 @@ export const ProjectDetails = [
         date : "12/09/23",
         description : "This Java project involves the development of a user-friendly system UI designed for SRD utilizing Java Swing."
     },
+
+    {
+        name: "Web Development",
+        Author: "Pravesh Subba",
+        date : "12/06/24",
+        description : "This Java project involves the development of portfolio."
+    },
 ]
 

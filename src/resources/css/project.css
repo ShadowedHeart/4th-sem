@@ -8,3 +8,7 @@
     margin: 0;
     padding: 0;
 }
+
+.changeColor :hover {
+    background-color: rgb(131, 226, 218);
+}

@@ -58,6 +58,7 @@ const Projects = () => {
     <div className="projects">
       {ProjectDetails.map((data, index) => (
         <Accordion
+          className="changeColor"
           key={index}
           expanded={expanded === `panel${index + 1}`}
           onChange={handleChange(`panel${index + 1}`)}
