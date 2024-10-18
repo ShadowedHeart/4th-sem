@@ -56,7 +56,7 @@ export default function Academics() {
         <Stepper nonLinear activeStep={activeStep}>
           {steps.map((label, index) => (
             <Step key={label}>
-              <StepButton color="inherit" onMouseEnter={handleStep(index)}> 
+              <StepButton color="inherit" onMouseEnter={handleStep(index)}>
                 {/* on hovering it will show */}
                 <Typography sx={{ fontSize: "1rem" }}> {label}</Typography>
               </StepButton>
@@ -68,10 +68,10 @@ export default function Academics() {
       <Box
         className="information"
         sx={{
-          height: "33%",
-          width: "35%",
+          height: "50%",
+          width: "100%",
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
         }}
       >
         {activeStep === 2 && (
@@ -90,8 +90,8 @@ export default function Academics() {
 
         {activeStep === 0 && (
           <>
-              <Box className="info3"></Box>
-              <Typography>Batch-2020</Typography>   
+            <Box className="info3"></Box>
+            <Typography>Batch-2020</Typography>
           </>
         )}
       </Box>

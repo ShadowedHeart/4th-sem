@@ -97,6 +97,7 @@ const Home = () => {
           className="avatarAnimation"
         />
       </Box>
+    
     </div>
   );
 };

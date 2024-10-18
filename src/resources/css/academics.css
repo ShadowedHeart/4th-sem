@@ -2,20 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .info1 {
-    width: 80%;
+    width: 50%;
     height: 100%;
     border-radius: 5%;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
     background-image: url('../images/Mudden.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-position: center bottom;
+    background-color: transparent;
 }
 
 .info2 {
-    width: 80%;
+    width: 50%;
     height: 100%;
     border-radius: 5%;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
@@ -26,12 +29,18 @@
 }
 
 .info3 {
-    width: 80%;
+    width: 50%;
     height: 100%;
     border-radius: 5%;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-    background-image: url('../images/stm.jfif');
+    background-image: url('../images/stm.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-position: center bottom;
 }
+
+.MContainer {
+
+}
+
