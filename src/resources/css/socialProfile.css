@@ -18,7 +18,7 @@ a :hover {
 }
 
 .startAnimation {
-    animation: movement 1s ease-in 1 normal;
+    animation: movement 2s ease-in 1 normal;
 }
 
 @keyframes movement {

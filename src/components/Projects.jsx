@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectDetails } from "../Utils/ProjectDetails";
+// import { ProjectDetails } from "../Utils/ProjectDetails";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../resources/css/project.css";
@@ -11,6 +11,8 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { Box,Link } from "@mui/material";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -49,14 +51,37 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 const Projects = () => {
-  const [expanded, setExpanded] = React.useState();
+  const [apiData, setApiData] = useState([]);
+  const [expanded, setExpanded] = useState();
+  const [loading, setLoading] = useState(true); 
+
+  useEffect(() => {
+    const fetchProjectDetails = async () => {
+      try {
+        const response = await axios.get("http://localhost:7000/userdata/projectDetails");
+        setApiData(response.data); 
+        console.log("projectDetails fetched");
+      } catch (err) {
+        console.log(err);
+      }
+      finally {
+        setLoading(false); 
+      }
+    };
+
+    fetchProjectDetails();
+  }, []);
+
+  if (loading) {
+    return <Box>Loading your project details...</Box>;
+  }
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
   return (
     <div className="projects">
-      {ProjectDetails.map((data, index) => (
+      {apiData.map((data, index) => (
         <Accordion
           className="changeColor"
           key={index}

@@ -1,46 +1,50 @@
 .information {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 1000px; 
 }
 .info1 {
-    width: 50%;
-    height: 100%;
-    border-radius: 5%;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-    background-image: url('../images/Mudden.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-position: center bottom;
-    background-color: transparent;
+  width: 50%;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  background-image: url("../images/Mudden.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position: center bottom;
+  background-color: transparent;
+  transition: transform 2s;
 }
 
 .info2 {
-    width: 50%;
-    height: 100%;
-    border-radius: 5%;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-    background-image: url('../images/hs.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  width: 50%;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  background-image: url("../images/hs.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 2s;
 }
 
 .info3 {
-    width: 50%;
-    height: 100%;
-    border-radius: 5%;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-    background-image: url('../images/stm.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: center bottom;
+  width: 50%;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  background-image: url("../images/stm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: center bottom;
+  transition: transform 2s;
 }
 
-.MContainer {
-
+.info1:hover, .info2:hover, .info3:hover {
+  transform: rotateY(360deg);
 }
 
