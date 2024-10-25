@@ -10,9 +10,10 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { Box,Link } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -53,19 +54,20 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 const Projects = () => {
   const [apiData, setApiData] = useState([]);
   const [expanded, setExpanded] = useState();
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProjectDetails = async () => {
       try {
-        const response = await axios.get("http://localhost:7000/userdata/projectDetails");
-        setApiData(response.data); 
+        const response = await axios.get(
+          "http://localhost:7000/userdata/projectDetails"
+        );
+        setApiData(response.data);
         console.log("projectDetails fetched");
       } catch (err) {
         console.log(err);
-      }
-      finally {
-        setLoading(false); 
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -73,7 +75,18 @@ const Projects = () => {
   }, []);
 
   if (loading) {
-    return <Box>Loading your project details...</Box>;
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "70vh", 
+        }}
+      >
+         <CircularProgress size="3rem" />
+      </Box>
+    );
   }
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -87,7 +100,7 @@ const Projects = () => {
           key={index}
           expanded={expanded === `panel${index + 1}`}
           onChange={handleChange(`panel${index + 1}`)}
-          sx={{ backgroundColor: "transparent",border:'none'}}
+          sx={{ backgroundColor: "transparent", border: "none" }}
         >
           <AccordionSummary
             aria-controls={`panel${index + 1}d-content`}
@@ -126,8 +139,12 @@ const Projects = () => {
                     fontWeight: "100",
                   }}
                 >
-                  <Link href="https://github.com/Pravesh-Subba/FirstRepo.git" underline="hover" variant="body2">
-                    {'learn more'}
+                  <Link
+                    href="https://github.com/Pravesh-Subba/FirstRepo.git"
+                    underline="hover"
+                    variant="body2"
+                  >
+                    {"learn more"}
                   </Link>
                 </Typography>
               </Box>
@@ -137,7 +154,7 @@ const Projects = () => {
                   textAlign: "right",
                   fontStyle: "italic",
                   fontWeight: "bold",
-                  m:2
+                  m: 2,
                 }}
               >
                 Author: {data.Author}
