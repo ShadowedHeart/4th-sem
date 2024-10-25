@@ -16,7 +16,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
-
 import {
   Avatar,
   Menu,
@@ -185,8 +184,11 @@ export default function Dashboard() {
       return;
     }
     let message = "";
-    if (index === 1) message = "Resume Download Started";
+    if (index === 1) {
+      message = "Resume Download Started";
+    }
     else if (index === 2) message = "Dark Mode is On";
+
     dispatch(setSnackbarOpen({ snackbarOpen: true, snackbarMessage: message }));
   };
 
@@ -304,7 +306,7 @@ export default function Dashboard() {
             )}
           </IconButton>
         </DrawerHeader>
-        <Divider/>
+        <Divider />
         <List className="sideMenuContainer" sx={{ background: "transparent" }}>
           {DEFAULT_SIDE_MENU.map((data, index) => (
             <div

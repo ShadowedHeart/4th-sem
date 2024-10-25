@@ -115,16 +115,16 @@ const Home = () => {
               // textAlign: "right",
               color: "text.secondary",
               fontSize: {
-                xs: "0.875rem", // Small screens
-                sm: "1rem", // Small to medium screens
-                md: "1.125rem", // Medium screens
+                xs: "0.875rem", 
+                sm: "1rem", 
+                md: "1.125rem", 
               },
               flexShrink: 1
             }}
           >
             "I have a strong interest in software development, web technologies,
             and artificial intelligence, and I continually seek to expand my
-            skill set through hands-on projects and coursework
+            skill set through hands-on projects and coursework"
           </Typography>
         </Box>
       </Box>
