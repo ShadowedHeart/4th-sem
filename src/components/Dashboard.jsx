@@ -15,6 +15,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import portfolio from "../resources/pdf/MyResume.pdf";
 
 import {
   Avatar,
@@ -225,7 +226,7 @@ export default function Dashboard() {
     dispatch(setActivePage({ activePage: DEFAULT_SIDE_MENU[index].title }));
     dispatch(setActiveSideMenu({ activeSideMenu: index }));
   };
-
+  
   return (
     <Box className="HomeContainer">
       <CssBaseline />
@@ -270,7 +271,7 @@ export default function Dashboard() {
               Profile
             </MenuItem>
             <MenuItem onClick={() => AvtarMenuClickHandler(1)}>
-              Download Resume
+            <a href={portfolio} download style={{ textDecoration: 'none',color: 'black'}}>Download Resume</a>
             </MenuItem>
             <MenuItem onClick={() => AvtarMenuClickHandler(2)}>
               Dark Mode
