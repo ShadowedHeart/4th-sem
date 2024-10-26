@@ -1,81 +1,53 @@
-<h1>Portfolio Project</h1>
-<br>
+# Portfolio Project
+
 This is a portfolio website built using React, Material UI, and Joy UI. It showcases personal projects, social profiles, academic background, and a downloadable resume.
 
-<h2>Table of Contents</h2>
-<br/>
-1. Project Overview<br>
-2. Functionality Overview<br/>
-3. Packages Used<br/>
-4. Scripts<br/>
-5. Installation<br/>
-6. Running the Project<br/>
+## Table of Contents
 
-<h2>Project Overview</h2>
-<br/>
+1. [Project Overview](#project-overview)  
+2. [Functionality Overview](#functionality-overview)  
+3. [Packages Used](#packages-used)  
+4. [Acknowledgments](#acknowledgments)  
 
-1. Implemeted the api waiting time fallback mechanism animation like progress spinner from mui.<br/>
-2. To optimize the application i used lazy loading hooks for better performance.<br/>
-3. I used the typewriter-effect library for the effect in my home page.<br/>
-4. I got problem fecthing api which contained array of object, later I reolved by making the initial useState value [] instead of null, since previously we were using stringyfy for 
- sending the data.<br>
-5. Implemented the stickman running animation, whenever we hover over the icon it will run like now we are going for that application network.<br> 
-6. Created a sample Portfolio using canva and can be downloaded on the system.<br/>
+## Project Overview
 
-<h2>Functionality Overview</h2>
-<br/>
+1. Implemented the API waiting time fallback mechanism animation like a progress spinner from MUI.  
+2. To optimize the application, I used lazy loading hooks for better performance.  
+3. I used the typewriter-effect library for the effect on my home page.  
+4. I encountered a problem fetching an API that contained an array of objects; later I resolved it by making the initial `useState` value `[]` instead of `null`, since previously we were using `stringify` for sending the data.  
+5. Implemented the stickman running animation; whenever we hover over the icon, it will run, simulating a network transition.  
+6. Created a sample portfolio using Canva, which can be downloaded to the system.  
 
-<h3>Home Page</h3>
-<ul>
-  <li>
-    It contains the introduction page with typewriter effect.
-  </li>
-   <li>
-    The data is fetched from the server backend
-  </li>
-</ul>
+## Functionality Overview
 
-<h3>Social Profile Page</h3>
-<ul>
-  <li>
-    It contains the all social links with attractive icons and animations
-  </li>
-</ul>
-<h3>Projects Page</h3>
-<ul>
-  <li>
-    It includes all the projects I have done in my UG level.
-  </li>
-</ul>
-<h3>Academics Page</h3>
-<ul>
-   <li>
-    Used stepper component to make more attractive.
-  </li>
-  <li>
-    It has the pictures of my previous school days and animations which rotates on hover.
-  </li>
-</ul>
-<h3>404 Page</h3>
- <li>
-  custom error page
-  </li>
+### Home Page
+- It contains the introduction page with a typewriter effect.
+- The data is fetched from the server backend.
 
-<h2>Packages Used</h2>
-<br/>
-<ul>
-<li>React</li>
-<li>Material UI</li>
-<li>React Router</li>
-<li>Redux Toolkit</li>
-<li>Typewriter-effect</li>
-<li>Axios</li>
-</ul>
+### Social Profile Page
+- It contains all the social links with attractive icons and animations.
 
-<h2>Acknowledgments</h2>
-<br>
-<p>Inspiration, code snippets, etc.</p>
+### Projects Page
+- It includes all the projects I have completed at the UG level.
 
-I would like to extend my gratitude to Gigme and <a href="https://github.com/ashikrai">Ashik</a> bro for their guidance and support throughout this project. Their insights and encouragement played a vital role in helping me complete this work successfully.
+### Academics Page
+- Used the stepper component to make it more attractive.
+- It has pictures from my previous school days and animations that rotate on hover.
 
+### 404 Page
+- Custom error page.
 
+## Packages Used
+
+- React
+- Material UI
+- React Router
+- Redux Toolkit
+- Typewriter-effect
+- Axios
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+
+I would like to extend my gratitude to Gigme and [Ashik](https://github.com/ashikrai) bro for their guidance and support throughout this project. Their insights and encouragement played a vital role in helping me complete this work successfully.
