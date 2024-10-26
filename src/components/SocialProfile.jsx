@@ -40,7 +40,7 @@ const SocialProfile = () => {
         }}
       >
         <a
-          href="https://github.com/Pravesh-Subba/FirstRepo.git"
+          href="https://github.com/ShadowedHeart/PortfolioProject.git"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
@@ -120,7 +120,8 @@ const SocialProfile = () => {
       </Box>
 
       <Box className="parentBox">
-        <Box className={`stickman ${animation ? "startAnimation" : ""}`}></Box>
+        <Box className={`stickman ${animation ? "startAnimation" : ""}`}>
+        </Box>
       </Box>
     </Box>
   );

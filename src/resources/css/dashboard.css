@@ -30,9 +30,11 @@
 
  .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
     /* background-color:transparent !important; */
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/smoke.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    /* backdrop-filter: blur(10px); */
+    /* background-position: center; */
  }
 
 .sideFloatClass{

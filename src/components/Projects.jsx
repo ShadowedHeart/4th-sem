@@ -138,7 +138,9 @@ const Projects = () => {
                   }}
                 >
                   <Link
-                    href="https://github.com/Pravesh-Subba/FirstRepo.git"
+                    href=" https://github.com/ShadowedHeart/PortfolioProject.git"
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     underline="hover"
                     variant="body2"
                   >

@@ -187,8 +187,7 @@ export default function Dashboard() {
     let message = "";
     if (index === 1) {
       message = "Resume Download Started";
-    }
-    else if (index === 2) message = "Dark Mode is On";
+    } else if (index === 2) message = "Dark Mode is On";
 
     dispatch(setSnackbarOpen({ snackbarOpen: true, snackbarMessage: message }));
   };
@@ -226,7 +225,7 @@ export default function Dashboard() {
     dispatch(setActivePage({ activePage: DEFAULT_SIDE_MENU[index].title }));
     dispatch(setActiveSideMenu({ activeSideMenu: index }));
   };
-  
+
   return (
     <Box className="HomeContainer">
       <CssBaseline />
@@ -271,7 +270,13 @@ export default function Dashboard() {
               Profile
             </MenuItem>
             <MenuItem onClick={() => AvtarMenuClickHandler(1)}>
-            <a href={portfolio} download style={{ textDecoration: 'none',color: 'black'}}>Download Resume</a>
+              <a
+                href={portfolio}
+                download
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Download Resume
+              </a>
             </MenuItem>
             <MenuItem onClick={() => AvtarMenuClickHandler(2)}>
               Dark Mode
@@ -341,7 +346,7 @@ export default function Dashboard() {
                           minWidth: 0,
                           mr: drawerOpen ? 3 : "auto",
                           justifyContent: "center",
-                          color: index === activeSideMenu ? "white" : "gray",
+                          color: index === activeSideMenu ? "white" : "black",
                         }}
                       >
                         {data.icon}
@@ -349,7 +354,13 @@ export default function Dashboard() {
                     </Tooltip>
                     <ListItemText
                       primary={data.title}
-                      sx={{ opacity: drawerOpen ? 1 : 0 }}
+                      sx={{
+                        opacity: drawerOpen ? 2 : 0,
+                        fontWeight: 900,
+                        fontSize: "1.2rem",
+                        color: '#FF5733',
+                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.4)',
+                      }}
                     />
                   </ListItemButton>
                 </ListItem>
