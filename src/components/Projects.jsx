@@ -59,9 +59,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjectDetails = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:7000/userdata/projectDetails"
-        );
+        const response = await axios.get("/userData/projectDetails");
         setApiData(response.data);
         console.log("projectDetails fetched");
       } catch (err) {
@@ -81,10 +79,10 @@ const Projects = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "70vh", 
+          height: "70vh",
         }}
       >
-         <CircularProgress size="3rem" />
+        <CircularProgress size="3rem" />
       </Box>
     );
   }

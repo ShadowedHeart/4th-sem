@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:7000/userdata");
+        const response = await axios.get("/userdata");
         setApiData(response.data); // Store the response data in state
         console.log("userdata fetched");
       } catch (err) {

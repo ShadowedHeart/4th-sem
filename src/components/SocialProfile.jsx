@@ -46,6 +46,7 @@ const SocialProfile = () => {
           style={{ textDecoration: "none" }}
           onMouseEnter={anime}
           onMouseLeave={anime}
+          className="smoothAnimation"
         >
           <GitHubIcon sx={{ cursor: "pointer", color: "#000", fontSize: 60 }} />
           <Typography sx={{ cursor: "pointer", color: "black" }}>
@@ -59,6 +60,7 @@ const SocialProfile = () => {
           rel="noopener noreferrer"
           onMouseEnter={anime}
           onMouseLeave={anime}
+          className="smoothAnimation"
         >
           <FacebookIcon
             sx={{ cursor: "pointer", color: "#3b5998", fontSize: 60 }}
@@ -74,6 +76,7 @@ const SocialProfile = () => {
           rel="noopener noreferrer"
           onMouseEnter={anime}
           onMouseLeave={anime}
+          className="smoothAnimation"
         >
           <InstagramIcon
             sx={{ cursor: "pointer", color: "#e1306c", fontSize: 60 }}
@@ -89,6 +92,7 @@ const SocialProfile = () => {
           rel="noopener noreferrer"
           onMouseEnter={anime}
           onMouseLeave={anime}
+          className="smoothAnimation"
         >
           <LinkedInIcon
             sx={{ cursor: "pointer", color: "#0077b5", fontSize: 60 }}
@@ -104,6 +108,7 @@ const SocialProfile = () => {
           rel="noopener noreferrer"
           onMouseEnter={anime}
           onMouseLeave={anime}
+          className="smoothAnimation"
         >
           <EmailIcon
             sx={{ cursor: "pointer", color: "primary.main", fontSize: 60 }}

@@ -28,6 +28,13 @@
     justify-content: flex-start;
 }
 
+ .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+    /* background-color:transparent !important; */
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
 .sideFloatClass{
     opacity: 0;
     animation-name: slideLeft;

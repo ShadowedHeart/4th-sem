@@ -9,6 +9,10 @@ a :hover {
     display: flex;
     align-items: center;
 }
+
+.smoothAnimation  {
+    animation: move 2s forwards;
+}
 .stickman {
     width: 15%;
     height: 15vh;
@@ -19,6 +23,16 @@ a :hover {
 
 .startAnimation {
     animation: movement 2s ease-in 1 normal;
+}
+
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(20%);
+    }
 }
 
 @keyframes movement {
